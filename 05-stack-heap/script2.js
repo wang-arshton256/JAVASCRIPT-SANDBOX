@@ -1,4 +1,4 @@
-// Data stored in a stack and changes the original variable.
+// Data stored in a stack.
 let name = 'wang';
 age = 25;
 
