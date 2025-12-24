@@ -1,6 +1,9 @@
+// Data stored in a stack
 let name = 'wang';
 age = 25;
 
+
+// Data stored in a heap (Is accessed by referencing)
 let fullProfile = {
     nationality : 'Ugandan',
     placeOfBirth : 'Mulago',
