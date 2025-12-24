@@ -1,9 +1,9 @@
-// Data stored in a stack
+// Data stored in a stack and changes the original variable.
 let name = 'wang';
 age = 25;
 
 
-// Data stored in a heap (Is accessed by referencing)
+// Data stored in a heap (Is accessed by referencing or pointig to the newly created variable.)
 let fullProfile = {
     nationality : 'Ugandan',
     placeOfBirth : 'Mulago',
