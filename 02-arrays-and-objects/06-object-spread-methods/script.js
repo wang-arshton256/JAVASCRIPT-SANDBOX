@@ -1,5 +1,5 @@
+// Creating a object using the object method
 let x;
-
 const shop = new Object();
 shop.name = 'Tasha shoping mall';
 shop.address = 'Mukono';
