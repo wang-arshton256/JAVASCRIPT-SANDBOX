@@ -28,6 +28,18 @@ x = obj4;
 console.log(obj4);
 
 
+// Passing objects as an array
+const student = [
+    { id:1, name: 'Gerald', Sex: 'male', },
+    { id:2, name: 'Peter', Sex: 'male', },
+    { id:3, name: 'Sandra', Sex: 'female', },
+]
+
+x = student[1];
+
+console.log(x);
+
+
 // More nexting
 const person = {
     address: {
