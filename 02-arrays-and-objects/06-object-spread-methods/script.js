@@ -14,7 +14,13 @@ obj1.name = 'wang';
 obj1.age = 25;
 obj1.sex = 'male'
 
-console.log(obj1)
+const obj2 = {nationality:'Ugandan', Continent: 'Africa', skinColor: 'Black',
+}
+
+// Using the spreat operator to  nest objects
+const obj3 = { ...obj1, ...obj2 };
+console.log(obj3);
+
 
 
 // More nexting
