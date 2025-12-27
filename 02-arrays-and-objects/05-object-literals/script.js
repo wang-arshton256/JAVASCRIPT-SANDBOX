@@ -34,7 +34,14 @@ console.log(beneficiary);
 beneficiary.children = ['Elisha', 'Salva']; // adding new array property to object
 beneficiary.spouse = 'Tasha';
 beneficiary.isMarried = true;
-beneficiary.children.push('Zoe');
+beneficiary.children.push('Zoe'); // adding new element to array inside object
 
+
+// Creating a function and using this keyword to access the name property.
+beneficiary.greet = function () {
+    console.log(`Hello World, my name is ${this.name}`)
+};
+
+beneficiary.greet();
 console.log(beneficiary);
 
