@@ -22,6 +22,11 @@ const obj3 = { ...obj1, ...obj2 };
 console.log(obj3);
 
 
+// using the assign methods
+const obj4 = Object.assign({}, obj1, obj2);
+x = obj4;
+console.log(obj4);
+
 
 // More nexting
 const person = {
