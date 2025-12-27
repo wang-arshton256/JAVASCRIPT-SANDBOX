@@ -28,4 +28,13 @@ console.log(x);
 beneficiary.age = 29;
 beneficiary.address = 'Kampala';
 beneficiary.name = 'Wangutusi';
+beneficiary.hasChilren = true; // adding new property to object;
 console.log(beneficiary);
+
+beneficiary.children = ['Elisha', 'Salva']; // adding new array property to object
+beneficiary.spouse = 'Tasha';
+beneficiary.isMarried = true;
+beneficiary.children.push('Zoe');
+
+console.log(beneficiary);
+
