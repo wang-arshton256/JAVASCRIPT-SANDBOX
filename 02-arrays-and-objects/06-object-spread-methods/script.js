@@ -40,6 +40,10 @@ x = student[1];
 console.log(x);
 
 
+//Using Object.keys method to get keys from an object and put them into an object.
+Object.keys(shop);
+
+
 // More nexting
 const person = {
     address: {
