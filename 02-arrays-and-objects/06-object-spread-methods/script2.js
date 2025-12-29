@@ -9,6 +9,7 @@ x = { ...profile, ...education };
 
 console.log(x)
 
+// Passing objects as an array
 let y;
 const student = [
     { std1: 'Wangutusi', age: 25, sex: 'male', nationality: 'Ugandan', },
@@ -19,30 +20,3 @@ const student = [
 y = student[2];
 console.log(y); 
 
-let q;
-const beneficiaries = {
-    profile: {
-    name: 'wangutusi',
-    age: 25,
-    sex: 'male',
-    nationality: 'Uganda',
-        phone: +256778252525,
-        address: {
-            homeLocation: 'Kirinya',
-            homeDistrict: 'Mbale',
-            office: {
-                mainBranch: 'Muyenga',
-                reginalBranchEastern: 'Jinja',
-                reginalBranchWestern: 'Mbarara',
-                reginalBranchCentral: 'Kampala',
-                reginalBranchNorthern: 'Lira',
-
-            }
-
-        }
-    }
-
-}
-
-
-console.log(beneficiaries.profile.address);
