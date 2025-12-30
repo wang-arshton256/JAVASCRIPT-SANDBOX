@@ -10,4 +10,16 @@ const person = {
 
 }
 
-console.log(age);
+console.log(person.age);
+
+// Destructuring while creating an object
+
+const todo = {
+    id: 1,
+    title: 'Take out the trash',
+}
+
+const { id, title } = todo;
+
+console.log(id, title);
+
