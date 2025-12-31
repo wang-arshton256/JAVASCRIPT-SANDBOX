@@ -13,3 +13,22 @@ function sum(...numbers) // Using the rest operator is similar to the spread ope
     return numbers;
 }
 console.log(sum(1, 2, 3, 5, 9));
+
+
+// Object as Params
+function loginUser(user) {
+    return `The user ${user.name} with id of ${user.id} is logged in.`;
+}
+
+// create a variable and assign it values for name & id
+const user = {
+    name: 'Wang',
+    id: 25,
+};
+
+console.log(loginUser(user));
+// Alternative
+console.log(loginUser({
+    id: 2,
+   name: 'Wang',
+ }));
