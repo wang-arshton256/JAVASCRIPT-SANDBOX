@@ -32,3 +32,14 @@ console.log(loginUser({
     id: 2,
    name: 'Wang',
  }));
+
+
+// Array as params
+function getRandon(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const item = arr[randomIndex];
+
+    console.log(item);
+}
+ 
+getRandon([1, 4, 5, 9, 75, 63, 45]);
