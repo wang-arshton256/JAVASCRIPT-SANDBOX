@@ -33,7 +33,5 @@ numbers.forEach(function (n){
     console.log(n)
 });
 
-
-
-// Shorter way to create array functions
+// Shorter way to create array functions in a call back
 numbers.forEach((n) => console.log(n));
