@@ -13,6 +13,8 @@ function sum() {
         const year2Results = sem3 + sem4
         console.log(year2Results)
     }
-    sum2();
+    sum2(); // child scoped functions can be accessed under parent scopes
 }
-sum();
+sum(); // Parent scope can only be accessed by the parent
+
+

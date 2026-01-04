@@ -9,10 +9,10 @@ function first() {
 
     }
     //console.log(y);
-    second();
+    second(); // child scoped functions can be accessed under parent scopes
 }
 
-first();
+first(); // Parent scope can only be accessed by the parent
 
 
 if (true) {
