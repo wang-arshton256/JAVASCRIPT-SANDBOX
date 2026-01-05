@@ -14,11 +14,23 @@ console.log(`The temp is ${getCelsius(32)}\xB0C`)
 // create an arrow function called minMax() which takes in an
 // array of numbers and returns an object with the minimum and maximum numbers in the array.
 
-function minMax(arr) {
-    const min = Math.min(arr);
-    console.log(min);
-}
+//function minMax(arr) {
+//    const min = Math.min(arr);
+//    console.log(min);
+//}
+
 minMax(1, 2, 3, 4, 7);
+
+function maximum(arr) {
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+
+    return {
+        min,
+        max,
+    };
+}
+console.log(minMax([1, 2, 3, 4, 5]));
 
 
 
