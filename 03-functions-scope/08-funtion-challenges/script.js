@@ -14,14 +14,14 @@ console.log(`The temp is ${getCelsius(32)}\xB0C`)
 // create an arrow function called minMax() which takes in an
 // array of numbers and returns an object with the minimum and maximum numbers in the array.
 
-//function minMax(arr) {
+// function minMax(arr) {
 //    const min = Math.min(arr);
 //    console.log(min);
-//}
+// }
 
-minMax(1, 2, 3, 4, 7);
+// minMax(1, 2, 3, 4, 7);
 
-function maximum(arr) {
+function minMax(arr) {
     const min = Math.min(...arr);
     const max = Math.max(...arr);
 
@@ -32,5 +32,25 @@ function maximum(arr) {
 }
 console.log(minMax([1, 2, 3, 4, 5]));
 
+// Challenge 3
+
+// Create an IIFE that takes in the lenght and width of a rectangle, outputs it to the console 
+// in a message as soon as the page loads.
+
+
+(function (length, width) {
+    const area = length * width; // Pass the variable
+    console.log('The area is ' + area);
+})(10, 5);
+
+// Solution 2
+
+((length, width) => {
+    const area = length * width;
+
+    const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`;
+    console.log(output)
+
+})(10, 5);
 
 
