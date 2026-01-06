@@ -1,36 +1,31 @@
-// Falsy Values:
-// - false
-// - 0 
-// - "" or '' (empty string)
-// - null 
-// - undefined
-// - NaN
-
-// Truthy Values:
-// - Everything else that is not falsy
-// - true
-// - '0' (0 in a string'
-// - 'false' (false in a string)
-// - '' (space in a string)
-// - [] (empty array)
-// - {} (empty object)
-// - fuction () {} (empty function)
 
 
-const email = 'wang@gmail.com'; // Anything passed in a string becomes a true boolean
+// Checking for empty arrays
+const posts = ['Post One'];
 
-if (email) {
-    console.log('You passed in an email');
-} 
-console.log(Boolean(email)); 
-
-
-const x = false;
-
-if (x) {
-    console.log('This is truthy');
+if (posts.length > 0) {
+    console.log('List Posts');
 } else {
-    console.log('This is false');
+    console.log('No Posts To List');
 }
 
-console.log(Boolean(x))  // X is not boolean in this case because it wasn't wrapped in a string.
+
+// Checking for an empty object
+
+const user = {
+    name: 'wang',
+    age: 25,
+    height: 5.7,
+
+};
+
+if (Object.keys(user).length > 0) {
+    console.log('List User');
+} else {
+    console.log('No User')
+}
+
+// Loose equality (==)
+console.log(false === 0);
+console.log('' === 0);
+console.log('' === undefined);
