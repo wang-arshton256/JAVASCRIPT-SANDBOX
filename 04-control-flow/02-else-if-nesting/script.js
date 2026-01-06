@@ -1,5 +1,5 @@
 
-const d = new Date(10, 30, 2022, 22, 0, 0);
+const d = new Date(10, 30, 2022, 8, 0, 0);
 const hour = d.getHours();
 
 if (hour < 12) {
@@ -32,4 +32,14 @@ else {
     if (hour > 20) {
         console.log('Time to sleep!!!')
     }
+}
+
+// Passing multiple conditions
+
+if (hour >= 7 && hour < 15) {
+    console.log('Its is work time');
+}
+
+if (hour === 6 || hour > 20) {
+    console.log('Brush your teeth!');
 }
