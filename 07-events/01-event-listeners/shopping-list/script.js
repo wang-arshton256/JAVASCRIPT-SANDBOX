@@ -30,8 +30,8 @@ function onClear() {
     const itemsList = document.querySelector('ul');
     const items = itemList.querySelectorAll('li');
     
-    // option 1
-    // itemsList.innerHTML = '';
+    // option 1 Set it to empty
+    itemsList.innerHTML = '';
     
     //option 2 using a for loop
     items.forEach((item) => item.remove());
