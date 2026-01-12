@@ -21,3 +21,23 @@ clearBtn.addEventListener('click', onClear);
 
 // Using remove function()
 setTimeout(() => clearBtn.removeEventListener('click', onClear), 5000);
+
+// Triger an event after set time
+setTimeout(() => clearBtn(), 5000);
+
+// function to clear all items in a list
+function onClear() {
+    const itemsList = document.querySelector('ul');
+    const items = itemList.querySelectorAll('li');
+    
+    // option 1
+    // itemsList.innerHTML = '';
+    
+    //option 2 using a for loop
+    items.forEach((item) => item.remove());
+
+    // Option 3 Using a while Loop
+    while (itemsList.firstChild) {
+        itemsList.removeChild(itemList.firstChild);
+    }
+    }
