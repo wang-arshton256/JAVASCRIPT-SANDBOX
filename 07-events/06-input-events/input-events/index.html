@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Comaptible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Keyboard Events
+</title>
+</head>
+<body>
+  <img src="Brown skin Original Logo  (1).png" height="70px" id="logo">
+   <h1>Keyboard Events</h1>
+  
+
+    <form id="item-form">
+  <div class="form-control">
+
+  <!--Text Input-->
+    <input
+    type = 'text'
+    class="form-input"
+    id="item-input"
+    name="item"
+    placeholder="Enter Item"
+    />
+  </div>
+
+  <!--Select Input-->
+  <select id="priority-input" name="priority" class="form-input">
+    <option value="0"> Select Priority</option>
+    <option value="1"> 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+  </select>
+
+  <!-- checkbox input-->
+   <input type ="checkbox" id="checkbox"/>
+   Recurring Item
+
+<div class="form-control">
+  <button type="submit" class="btn">
+<i class="fa-solid fa-plus"></i> Add Item
+  </button>
+</div>
+  </form>
+<div class="filter-tasks">
+  <input
+  type="text"
+  class="form-input-filter"
+  id="filter"
+  placeholder="Filter Items"
+  />
+</div>
+   <script src="script.js"></script>
+</body>
+</html>
