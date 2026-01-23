@@ -14,6 +14,7 @@ function changeText() {
     document.querySelector('h1').textContent = 'Hello from Callback'
 }
 
+// loging the timeout to the console
 const timerId = setTimeout(changeText, 3000);
 
 Document.querySelector('#cancel').addEventListener('click', () => {
