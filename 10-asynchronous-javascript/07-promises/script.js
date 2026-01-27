@@ -45,6 +45,8 @@ const getUser = new Promise((resolve, reject) => {
 })
 
 getUser.then((user) => console.log(user)).catch((error) => console.log(error))
+    
+    // Cacthing errors
 .catch ((error) => console.log(error))
 .finally(() => console.log('The promise has been resolved of rejected'));
 console.log('Hello from global scope');
