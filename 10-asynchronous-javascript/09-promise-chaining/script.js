@@ -1,33 +1,35 @@
+function getData(endpoint) {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('GET', endpoint);
+
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                if (this.status === 200) {
+                    resolve(JSON.parse(this.responseText));
+                } else {
+                    reject('Something went worng');
+                }
+            }
+        };
+
+        setTimeout(() => {
+            xhr.send();
+        }, Math.floor(Math.random() * 3000) + 1000);
+    });
+}
 
 
-// Catching errors
-const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let error = true;
-
-        if (!error) {
-            resolve({ name: 'John', age: 30 });
-        } else {
-            reject('Error: Something went wrong');
-        }
-    }, 1000);
-})
-
-promise
-    .then((user) => {
-        console.log(user);
-        return user.name;
+getData('./movies.json')
+    .then((movies) => {
+        console.log(movies);
+        return getData('./actors.json')
     })
-
-    .then((name) => {
-        console.log(name);
-        return name.length;
+    .then((actors) => {
+        console.log(actors);
+        return getData('./directors.json');
     })
-
-    .then((nameLength) => {
-        console.log(nameLength);
-    })
-    .catch((error) => console.log(error));
-    return 123;
-
-    // .then((x) => console.log('This will run no matter what', x));
+    .then((directors) => {
+        console.log(first)
+    });
