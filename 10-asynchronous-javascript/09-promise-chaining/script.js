@@ -30,4 +30,4 @@ promise
     .catch((error) => console.log(error));
     return 123;
 
-    .then((x) => console.log('This will run no matter what', x));
+    // .then((x) => console.log('This will run no matter what', x));
