@@ -16,7 +16,7 @@ function getData(endpoint) {
 
         setTimeout(() => {
             xhr.send();
-        }, Math.floor(Math.random() * 3000) + 1000);
+        },  Math.floor(Math.random() * 3000) + 1000);
     });
 }
 
