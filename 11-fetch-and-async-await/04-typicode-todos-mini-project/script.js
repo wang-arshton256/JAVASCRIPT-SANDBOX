@@ -41,6 +41,7 @@ const createTodo = (e) => {
     .then((data) => addTodoToDom(data));  
 };
 
+
 const init = () => { 
   document.addEventListener('DOMContentLoaded', getTodos);
   document.querySelector('#todo-form').addEventListener('submit', createTodo);
