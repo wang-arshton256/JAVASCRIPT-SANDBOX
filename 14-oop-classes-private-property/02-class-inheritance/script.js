@@ -57,6 +57,7 @@ rect.logName();
 const cir = new Circle('Circle 1', 360);
 cir.logName();
 
+// Checking if object is an instance of the class
 console.log(rect instanceof Rectangle);
 console.log(rect instanceof Shape);
 
