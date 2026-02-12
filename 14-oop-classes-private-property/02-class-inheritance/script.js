@@ -62,3 +62,29 @@ console.log(rect instanceof Shape);
 
 console.log(cir instanceof Circle);
 console.log(cir instanceof Rectangle);
+
+class registerBeneficiary{
+    constructor(name) {
+      
+        this.name = name;
+    }
+}
+
+class beneficiaryProfile extends registerBeneficiary{
+    constructor( name, age, sex) {
+        super(name)
+        
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+    beneficiaryDetails = function(){
+        console.log('This is the profile: ' + this.name);
+    }
+
+}
+
+const beneficiary = new beneficiaryProfile('Wangutusi', 25, 'Male');
+
+console.log(beneficiary.beneficiaryDetails());
+
