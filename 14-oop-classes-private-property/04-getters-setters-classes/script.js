@@ -4,15 +4,23 @@ class Person {
         this._lastName = lastName;
     }
 
-    // Getters
-    get firstName() {
-        return this._firstName.charAt(0).toUpperCase() + this._firstName.slice(1);
-    }
-
-
     // Setters
     set firstName(value) {
-        this._firstName = value.charAt(0).toUpperCase() + value.slice(1);
+        this._firstName = this.capitalizeFirst(value);
+    }
+
+    // Getters
+    get firstName() {
+        return this.capitalizeFirst(this._lastName);
+    }
+
+    // Setters
+    set lastName(value) {
+        this._lastName = this.capitalizeFirst(value);
+    }
+
+    capitalizeFirst(value) {
+        return value.charAt(0).toUpperCase() + value.slice(1);
     }
 }
 
@@ -21,3 +29,4 @@ console.log(person1.firstName)
 
 person1.firstName = 'derick';
 console.log(person1);
+
